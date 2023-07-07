@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Agregar estilos a la directiva base */
+@layer base {
+    a{
+        @apply text-center text-red-500
+    }
+}
+
+/* Agregar estilos a la directiva components */
+@layer components {
+    /* Apply */
+    .btn {
+        /* @apply px-7 py-2 rounded-lg font-bold */
+        @apply p-8.2 rounded-lg font-bold
+        /* @apply sm:text-center md:text-left lg:text-right */
+    }
+
+    .btn-red {
+        @apply bg-red-500 text-white hover:bg-red-400
+    }
+    .btn-scale{
+        @apply transform hover:scale-125 transition duration-300
+    }
+
+}
+
+/* Agregar estilos a la directiva utilities */
+/* @layer utilities{
+    .p-89{
+        @apply p-5
+
+    }
+} */
+/* Funciones */
+
+@screen 2xl{
+    .bg-negro{
+        background:#000
+    }
+}
+
+.content-area{
+    color:theme('colors.red.500');
+    width:theme('spacing.52')
+}
+
+/* .text-link{
+    @apply text-blue-dark bg-blue-light
+} */
+/* .espaciado{
+    @apply p-1.5 pt-1.5 m-1.5 w-1.5
+} */

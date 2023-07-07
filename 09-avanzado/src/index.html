@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <style>
+      #formulario {
+        width: 400px;
+
+        height: 200px;
+        /* display:inline-block; */
+        background: rgb(209, 203, 200);
+        /* margin-bottom: 100px; */
+      }
+    </style>
+  </head>
+  <body>
+    
+
+    <!-- Ejemplo de @apply -->
+    <button class="btn btn-red btn-scale">Click aqui</button>
+
+    <!-- Ejemplo de Layer -->
+    <a href="#" class="p-89">Prueba de Layer</a>
+    <!-- Prueba de Jit -->
+    <p class="text-[#57f393] p-[1.2rem]">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      veritatis iste deserunt similique facilis officiis inventore quos
+      laudantium facere temporibus, vero quam aliquam ea nulla unde aspernatur
+      commodi porro quod!
+    </p>
+
+    <!-- Plugin Typography -->
+    <article class="prose lg:prose-xl">
+      <h1>Garlic bread with cheese: What the science tells us</h1>
+      <p>
+        For years parents have espoused the health benefits of eating garlic
+        bread with cheese to their children, with the food earning such an
+        iconic status in our culture that kids will often dress up as warm,
+        cheesy loaf for Halloween.
+      </p>
+      <p>
+        But a recent study shows that the celebrated appetizer may be linked to
+        a series of rabies cases springing up around the country.
+      </p>
+      <!-- ... -->
+    </article>
+
+    <!-- Plugin Form -->
+    <!-- class="m-auto w-2/5 " -->
+
+    <div id="formulario" class="m-auto w-2/5 flex flex-col">
+      <input type="email" class="form-input px-4 py-3 rounded-lg" />
+
+      <select class="form-select px-4 py-3 rounded-full">
+        <option value="1">Opcion 1</option>
+        <option value="2">Opcion 2</option>
+      </select>
+
+      <input type="checkbox" class="form-checkbox rounded text-pink-500" />
+    </div>
+  </body>
+</html>
